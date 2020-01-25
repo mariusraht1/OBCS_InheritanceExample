@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Invoice</name>
+    </assembly>
+    <members>
+        <member name="T:Financials.Invoice">
+            <summary>
+            Die Klasse Invoice stellt eine Rechnung dar. 
+            </summary>
+        </member>
+        <member name="M:Financials.Invoice.#ctor">
+            <summary>
+            Konstruktor für die Rechnung
+            </summary>
+        </member>
+        <member name="F:Financials.Invoice.Date">
+            <summary>
+            Rechnungsdatum
+            </summary>
+        </member>
+        <member name="F:Financials.Invoice.Number">
+            <summary>
+            Rechnungsnummer
+            </summary>
+        </member>
+        <member name="F:Financials.Invoice.Currency">
+            <summary>
+            Rechnungswährung
+            </summary>
+        </member>
+        <member name="F:Financials.Invoice.Recipient">
+            <summary>
+            Empfänger
+            </summary>
+        </member>
+        <member name="F:Financials.Invoice.items">
+            <summary>
+            items enthält die Rechnungspositionen in Form einer ArrayList
+            </summary>
+        </member>
+        <member name="M:Financials.Invoice.AddItem(Financials.InvoiceItem)">
+            <summary>
+            AddItem fügt der Rechnung eine Position hinzu
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="P:Financials.Invoice.Items">
+            <summary>
+            Items gibt die Rechnungspositionen als ArrayList zurück (ReadOnly)
+            </summary>
+        </member>
+        <member name="T:Financials.InvoiceItem">
+            <summary>
+            Die Klasse InvoiceItem repräsentiert eine Rechnungsposition
+            </summary>
+        </member>
+        <member name="P:Financials.InvoiceItem.SumPrice">
+            <summary>
+            SumPrice gibt den Preis dieser Position zurück (Anzahl + Einzelpreis)
+            </summary>
+        </member>
+    </members>
+</doc>
